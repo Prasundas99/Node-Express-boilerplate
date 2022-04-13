@@ -1,9 +1,7 @@
-module.exports = {
-  testEnvironment: 'node',
-  testEnvironmentOptions: {
-    NODE_ENV: 'test',
-  },
-  restoreMocks: true,
-  coveragePathIgnorePatterns: ['node_modules', 'src/config', 'src/app.js', 'tests'],
-  coverageReporters: ['text', 'lcov', 'clover', 'html'],
+export const testEnvironment = 'node';
+export const testEnvironmentOptions = {
+  NODE_ENV: 'test',
 };
+export const restoreMocks = true;
+export const coveragePathIgnorePatterns = ['node_modules', 'src/config', 'src/app.js', 'tests'];
+export const coverageReporters = ['text', 'lcov', 'clover', 'html'];
